@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macchina Raspberry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!--<link rel="manifest" href="manifest.json">-->
+    <script src="{{ url_for('static', filename='gestioneMacchina.js') }}"></script>
+</head>
+<body>
+    <h1 id="statoMacchina">Macchina Spenta!</h1>
+    <div id="video-container">
+      <h2 id="titoloCam">Live Camera Stream</h2>
+      <img id="trasmissione" 
+        src="http://ismail.local:5000/video_feed">
+    </div>
+    <button id="pulsanteOnOff" type="submit" onclick="accendiOspegni()">ON/OFF</button>
+    <div id="contenitoreJoyStick">
+        <div id="joyStick"></div>
+    </div>
+</body>
+</html>

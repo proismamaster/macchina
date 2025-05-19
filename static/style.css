@@ -1,0 +1,95 @@
+body{
+    background-image: url(img/sfondo.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 105vh;
+    background-position-y: 120%;
+}
+#statoMacchina{
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    text-shadow: 0.5vw 0.5vw rgb(3, 3, 3);
+
+}
+#pulsanteOnOff{
+    width: 12vw;
+    height: 4vw;
+    font-size: 2.4vw;
+    border: 0.3vw solid black;
+    border-radius: 2vw;
+    text-align: center;
+    font-weight: bold;
+    background-color: red; 
+    margin-top: 2vw; 
+}
+#contenitoreJoyStick{
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey con 50% di opacità */
+    width: 12vw;
+    height: 12vw;
+    margin-top: 35vw;
+    margin-right: 70vw;
+    position: absolute;
+    border: 0.2vw solid black;
+    overflow: hidden; /* Per evitare che il joystick si sposti fuori */
+    touch-action: none; /* Disabilita comportamenti predefiniti dei touch */
+}
+#joyStick{
+    border-radius: 50%;
+    background-color: rgba(92, 91, 91);
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0.2vw solid black;
+    transform: translate(-50%, -50%); /*cosi prende il centrio del div come punto di riferimento */
+}
+#titoloCam{
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    text-shadow: 0.2vw 0.3vw rgb(3, 3, 3);
+    font-weight: bold;
+}
+#trasmissione{
+    border: 0.2vw solid black;
+    width: 35vw;
+    height: 25vw;
+}
+@media screen and (max-width: 700px) { 
+    #statoMacchina{
+        margin-top: 4vh;
+        font-size: 6vw;
+        text-shadow: 0.75vw 0.75vw rgb(3, 3, 3);
+    }
+    #pulsanteOnOff{
+        width: 24vw;
+        height: 8vw;
+        font-size: 4.8vw;
+    }
+    #contenitoreJoyStick{
+        width: 24vw;
+        height: 24vw;
+        margin-top: 50%;
+        margin-right: 60%;
+        position: relative;
+        border: 0.2vw solid black;
+        overflow: hidden; /* Per evitare che il joystick si sposti fuori */
+        touch-action: none; /* Disabilita comportamenti predefiniti dei touch */
+    }
+    #joyStick{
+        width:10vw;
+        height: 10vw;
+    }
+    #trasmissione{
+        width: 90vw;
+        height: 70VW;
+        border: 1vw solid black;
+    }
+}
